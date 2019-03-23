@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- 映射文件 -->
+<!-- 在映射文件出现的name属性都是指的java的类名，属性名 -->
+<!-- 在映射文件出现的column属性都是指的数据库表的字段(列)名:也可以不写，使用name属性的值 -->
+<!-- 在映射文件出现的type属性是:1.java的全限定类名java.lang.Long 2.也可以是hibernate的类型名称long 3.也可以不写,hibernate会通过反射技术获取java的类型 -->
+<hibernate-mapping package="com.xzj.hibernate.model">
+    <!-- class表示一个由hibernate管理的持久对象,对应数据库的一个表 -->
+    <!-- table数据库的表名 -->
+    <class name="LoginUser" table="login_user">
+        <!-- id元素（节点）是必须的，是代表表的主键 -->
+        <id name="id" column="id">
+            <!-- generator表示主键的生成方式,多数都是使用native -->
+            <!-- native自动选择数据库本地的策略: -->
+            <!-- mysql:AUTO_INCREMENT自增 --><!-- oracle:序列 -->
+            <generator class="native" />
+        </id>
+        <!-- 非主键属性 -->
+        <property name="userName" column="user_name" />
+        <property name="password" column="password"/>
+        <!-- default="25"还必须同时配置一个属性insert="false",表示不出现在insert语句; -->
+         <property name="age" insert="false">
+             <column name="age" default="25" />
+         </property>
+         <!-- update=false:一经保存就不能修改属性:身份证号码,创建时间 -->
+         <property name="createTime" column="create_time" update="false"/>
+    </class>
+</hibernate-mapping>
