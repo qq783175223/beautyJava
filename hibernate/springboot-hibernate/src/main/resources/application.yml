@@ -1,0 +1,14 @@
+###################  spring配置  ###################
+spring:
+  profiles:
+    active: dev
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        new_generator_mappings: false
+        format_sql: true
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?serverTimezone=GMT&useSSL=false&autoReconnect=true&tinyInt1isBit=false&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
