@@ -4,7 +4,7 @@
     <property name="dataSource" ref="dataSource"/>
 </bean>
 
-如何springboot想配置自己的bean可以在类前面加上如下注解：
+如果springboot想配置自己的bean可以在类前面加上如下注解：
 
 @Component      //不加这个注解的话, 使用@Autowired 就不能注入进去了
 
