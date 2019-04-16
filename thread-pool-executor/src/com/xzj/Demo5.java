@@ -36,21 +36,22 @@ public class Demo5 {
 		
 		
 		/**
-		 * 1
-		 * 3
-		 * 0
-		 * 
-		 * 1
-		 * 6
-		 * 0
-		 * 
-		 * 1
-		 * 1
-		 * 0
-		 * 
-		 * 1
-		 * 1
-		 * 0
+		 * ---先开三个---
+		 * 核心线程数1
+		 * 线程池数3
+		 * 队列任务数0
+		 * Exception in thread "main" java.util.concurrent.RejectedExecutionException: 
+		 * Task com.xzj.Demo5$1@14ae5a5 rejected from java.util.concurrent.
+		 * ThreadPoolExecutor@7f31245a[Running, pool size = 5, active threads = 5, queued tasks = 0, completed tasks = 0]
+		 * 	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+		 *	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+		 *	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+		 *	at com.xzj.Demo5.main(Demo5.java:64)
+		 * demo-pool-0 run
+		 * demo-pool-1 run
+		 * demo-pool-2 run
+		 * demo-pool-3 run
+		 * demo-pool-4 run
 		 */
 		executor.execute(myRunnable);
 		executor.execute(myRunnable);
