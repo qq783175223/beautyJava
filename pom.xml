@@ -6,7 +6,40 @@
 
     <groupId>com.xzj</groupId>
     <artifactId>primary-java</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>abstract-interface-final</module>
+        <module>asr-client</module>
+        <module>cache</module>
+        <module>classloader</module>
+        <module>collections-sort</module>
+        <module>concurrent</module>
+        <module>delay-queue</module>
+        <module>enum</module>
+        <module>functional-programming</module>
+        <module>hashcode-equals</module>
+        <module>hibernate</module>
+        <module>hook</module>
+        <module>io</module>
+        <module>jdbc-template</module>
+        <module>jpa</module>
+        <module>pair</module>
+        <module>queue</module>
+        <module>reflect</module>
+        <module>rsa</module>
+        <module>serializable</module>
+        <module>spring-webflux</module>
+        <module>springboot</module>
+        <module>static</module>
+        <module>synchronized-lock</module>
+        <module>thread-pool-executor</module>
+        <module>thread-reboot</module>
+        <module>thread</module>
+        <module>threadlocal</module>
+        <module>unsafe-field</module>
+        <module>webmvc-framework</module>
+    </modules>
 
 
 </project>
