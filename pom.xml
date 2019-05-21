@@ -39,7 +39,7 @@
         <module>threadlocal</module>
         <module>unsafe-field</module>
         <module>webmvc-framework</module>
+        <module>cas</module>
     </modules>
-
 
 </project>
