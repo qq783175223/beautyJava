@@ -6,3 +6,12 @@
 ### join
 
 [案例博文参考链接](https://www.cnblogs.com/skywang12345/p/3479275.html)
+
+### wait
+
+[Differences between wait() and join() methods in Java](https://www.geeksforgeeks.org/differences-between-wait-and-join-methods-in-java/)
+
+
+### notifyAll
+
+[Difference between notify() and notifyAll() in Java](https://www.geeksforgeeks.org/difference-notify-notifyall-java/)
