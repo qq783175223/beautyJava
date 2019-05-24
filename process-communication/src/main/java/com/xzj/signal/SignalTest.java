@@ -14,6 +14,7 @@ public class SignalTest {
             }
         };
         // 只有kill -9能够结束jvm进程，别的信号量只是发送给java进程处理，至于如何响应是程序代码决定的
+        //能接受特定信号的前提是进程注册了该信号，JVM并没有注册所有的信号，对JVM注册了的信号，用户可以自定义响应事件
 //        Signal.handle(new Signal("HUP"), signalHandler); // kill -1 PID
         Signal.handle(new Signal("INT"), signalHandler); // kill -2 PID
         // already used by VM or OS: SIGQUIT
