@@ -21,9 +21,9 @@ public class ReflectFieldTest {
 //		stu.setCreatedate(new Date());
 		
 		Field property1 = stu.getClass().getDeclaredField("name");
-		System.out.println(property1);// private java.lang.String com.cx.test.Student.name
+		System.out.println(property1);// private java.lang.String com.xzj.field.Student.name
 		Field property3 = stu.getClass().getField("nickname");
-		System.out.println(property3);// public java.lang.String com.cx.test.Student.nickname
+		System.out.println(property3);// public java.lang.String com.xzj.field.Student.nickname
 		// 错误方法 getField系列方法只能获取公共字段
 //		Field property2 = stu.getClass().getField("name");
 //		System.out.println(property2);

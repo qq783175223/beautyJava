@@ -13,7 +13,7 @@ import sun.misc.Unsafe;
 
 
 class User {
-    private String name = "";
+    private String name = "xuzhijun";
     private int age = 0;
 
     public User() {
