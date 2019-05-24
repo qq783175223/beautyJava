@@ -19,9 +19,8 @@ public class CustomThreadPoolExecutor extends ThreadPoolExecutor {
         super.afterExecute(r, t);
         //若线程执行某任务失败了，重新提交该任务
         if (t != null) {
-            Runnable task =  r;
             System.out.println("restart task...");
-			execute(task);
+			execute(r);
         }
     }
 }
