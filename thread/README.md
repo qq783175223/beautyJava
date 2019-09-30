@@ -15,3 +15,8 @@
 ### notifyAll
 
 [Difference between notify() and notifyAll() in Java](https://www.geeksforgeeks.org/difference-notify-notifyall-java/)
+
+
+### state
+
+[Thread知多少](https://smartboot.gitee.io/book/share/thread/readme.html)

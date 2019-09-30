@@ -41,6 +41,7 @@
         <module>webmvc-framework</module>
         <module>cas</module>
         <module>process-communication</module>
+        <module>exception</module>
     </modules>
 
 </project>
