@@ -44,6 +44,7 @@
         <module>exception</module>
         <module>callable-future</module>
         <module>generic</module>
+        <module>super</module>
     </modules>
 
 </project>
