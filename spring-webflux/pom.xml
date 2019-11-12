@@ -15,5 +15,6 @@
         <module>spring-webflux-annotation</module>
         <module>spring-webflux-function</module>
         <module>spring-webmvc</module>
+        <module>my-reactor</module>
     </modules>
 </project>
