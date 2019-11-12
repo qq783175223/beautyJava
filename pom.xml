@@ -43,6 +43,7 @@
         <module>process-communication</module>
         <module>exception</module>
         <module>callable-future</module>
+        <module>generic</module>
     </modules>
 
 </project>
