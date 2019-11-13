@@ -1,7 +1,8 @@
 1. 首先通过mkfifo系统函数创建一个管道（管道本质也是一个文件）
 
-    编译：gcc -o pipe pipe.c
-    运行：./pipe
+        编译：gcc -o pipe pipe.c
+    
+        运行：./pipe
 
 2. FifoWriter往管道写数据（会阻塞到有进程来管道读为止）
 
