@@ -27,13 +27,14 @@ public class JoinTest {
 		public ThreadA(String name) {
 			super(name);
 		}
-
+		@Override
 		public void run() {
 			System.out.printf("%s start\n", this.getName());
 
 			// 延时操作
-			for (int i = 0; i < 1000000; i++)
-				;
+			for (int i = 0; i < 1000000; i++) {
+
+			};
 
 			System.out.printf("%s finish\n", this.getName());
 		}
