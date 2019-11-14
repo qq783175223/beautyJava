@@ -12,7 +12,7 @@ public class Erasure1<T>{
         this.object = object;
     }
 
-    public void add(T object){
+    public <T extends String>  void add(T object){
 
     }
 
