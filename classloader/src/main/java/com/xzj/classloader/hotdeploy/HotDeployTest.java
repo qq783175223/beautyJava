@@ -19,7 +19,7 @@ public class HotDeployTest {
 			
 			Thread.sleep(20000);
 			
-//			//在休眠的时候去修改类文件，热更新不能被体现，还是从缓存中获取之前加载过的类
+//			//在休眠的时候去修改类文件
 			Class<?> object2 = loader.loadClass("com.xzj.classloader.DemoObj");
 			
 			System.out.println("loadClass->obj1:" + object1.hashCode()+"  "+object1.newInstance().toString());
