@@ -13,3 +13,5 @@
  [ava锁的种类以及辨析（四）：可重入锁](http://ifeve.com/java_lock_see4/)
 
  [Java Concurrency Lock and Condition Examples](https://www.zoftino.com/java-concurrency-lock-and-condition-examples)
+ 
+ [Java多线程（九）之ReentrantLock与Condition](https://blog.csdn.net/vernonzheng/article/details/8288251#commentBox)
