@@ -9,3 +9,5 @@
  [ReentrantLock和synchronized的性能对比](https://yq.aliyun.com/articles/48612)
  
  [详解synchronized与Lock的区别与使用](https://blog.csdn.net/u012403290/article/details/64910926)
+ 
+ [ava锁的种类以及辨析（四）：可重入锁](http://ifeve.com/java_lock_see4/)

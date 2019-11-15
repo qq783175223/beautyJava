@@ -50,11 +50,13 @@ public class Main {
         //编译报错
 //        list2.add("ds");
 
+        //基本数据数组类型作为一个对象
         int[] myArray = { 1, 2, 3 };
         print1(myArray);
 
         int num = 22;
         print2(num);
+
 
 
     }
