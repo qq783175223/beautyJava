@@ -48,6 +48,7 @@
         <module>process</module>
         <module>annotation</module>
         <module>doc</module>
+        <module>finalize</module>
     </modules>
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
