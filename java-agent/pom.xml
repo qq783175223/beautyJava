@@ -16,6 +16,7 @@
         <module>premain-app</module>
         <module>agentmain-agent</module>
         <module>agentmain-app</module>
+        <module>attach</module>
     </modules>
 
 

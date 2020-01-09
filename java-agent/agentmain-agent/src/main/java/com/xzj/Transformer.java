@@ -39,12 +39,14 @@ import java.security.ProtectionDomain;
 
 public class Transformer implements ClassFileTransformer {
 
-    public static final String classNumberReturns2 = "TransClass.class.2.2";
+    public static final String classNumberReturns2 = "TransClass.class.100";
 
     public static byte[] getBytesFromFile(String fileName) {
         try {
             // precondition
             File file = new File(fileName);
+            System.out.println("Created file : " + file);
+            System.out.println("The file path : " + file.getAbsolutePath());
             InputStream is = new FileInputStream(file);
             long length = file.length();
             byte[] bytes = new byte[(int) length];
@@ -52,11 +54,10 @@ public class Transformer implements ClassFileTransformer {
             // Read in the bytes
             int offset = 0;
             int numRead = 0;
-            while (offset <bytes.length
+            while (offset < bytes.length
                     && (numRead = is.read(bytes, offset, bytes.length - offset)) >= 0) {
                 offset += numRead;
             }
-
             if (offset < bytes.length) {
                 throw new IOException("Could not completely read file "
                         + file.getName());
@@ -64,13 +65,11 @@ public class Transformer implements ClassFileTransformer {
             is.close();
             return bytes;
         } catch (Exception e) {
-            System.out.println("error occurs in _ClassTransformer!"
+            System.out.println("xuzhijun: error occurs in _ClassTransformer!"
                     + e.getClass().getName());
             return null;
         }
     }
-
-
 
 
     /**
