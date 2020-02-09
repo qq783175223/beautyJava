@@ -51,6 +51,7 @@
         <module>finalize</module>
         <module>java-agent</module>
         <module>agent</module>
+        <module>reference</module>
     </modules>
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
