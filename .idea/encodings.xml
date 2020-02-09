@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/asr-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/classloader" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/collections-sort" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/concurrent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/delay-queue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/enum" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/functional-programming" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hibernate/springboot-hibernate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hook" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/io" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jdbc-template/springboot-jdbctemplate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pair" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/queue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reflect" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/serializable" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-webflux/gatling" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-webflux/gatling/mvc-with-latency" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-webflux/gatling/restTemplate-as-caller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-webflux/gatling/webClient-as-caller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-webflux/gatling/webflux-with-latency" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-webflux/spring-webflux" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-webflux/spring-webflux-annotation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-webflux/spring-webflux-function" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-webflux/spring-webmvc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/springboot-mybatis-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/synchronized-lock" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread-reboot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/unsafe-field" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
