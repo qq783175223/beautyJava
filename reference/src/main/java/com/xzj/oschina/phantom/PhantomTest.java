@@ -46,7 +46,7 @@ public class PhantomTest {
             //用下面命令查看文件句柄,如果把上面register注释掉,就会发现句柄数量不断上升
             //jps | grep PhantomTest | awk '{print $1}' |head -1 | xargs  lsof -p  | grep /User/robin
 
-            //下一次循环的时候gc才起作用
+            //下一次循环的时候才能gc掉上一次的FileOperation对象
             //会gc掉上一次创建的FileOperation对象，但是不会gc FileInputStream/FileOutputStream, 因为FileInputStream/FileOutputStream一直被all引用
             System.gc();
 
