@@ -1,14 +1,11 @@
 package com.xzj.oschina.reference;
 
-import java.lang.ref.Reference;
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.SoftReference;
+import java.lang.ref.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
- *
  * 为了确保System.gc()后,SoftReference引用的referent被回收需要加入下面的参数
  * -XX:SoftRefLRUPolicyMSPerMB=0
  */
@@ -23,15 +20,15 @@ public class ReferenceTest {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                int i=0;
+                int i = 0;
                 while (true) {
                     try {
                         Reference r = rq.remove();
-                        System.out.println("reference:"+r);
+                        System.out.println("reference:" + r);
                         //为null说明referent被回收
-                        System.out.println( "get:"+r.get());
+                        System.out.println("get:" + r.get());
                         i++;
-                        System.out.println( "queue remove num:"+i);
+                        System.out.println("queue remove num:" + i);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -40,16 +37,17 @@ public class ReferenceTest {
         }).start();
 
 
-        for(int i=0;i<100000;i++) {
-            byte[] a = new byte[1024*1024];
+        for (int i = 0; i < 100000; i++) {
+            byte[] a = new byte[1024 * 1024];
             // 分别验证SoftReference,WeakReference,PhantomReference
-            Reference r = new SoftReference(a, rq);
-            //Reference r = new WeakReference(a, rq);
-            //Reference r = new PhantomReference(a, rq);
+//            Reference r = new SoftReference(a, rq);
+            Reference r = new WeakReference(a, rq);
+//            Reference r = new PhantomReference(a, rq);
+            System.out.println("**** = " + r.get());
             roots.add(r);
             System.gc();
 
-            System.out.println("produce"+i);
+            System.out.println("produce" + i);
             TimeUnit.MILLISECONDS.sleep(100);
         }
     }
